@@ -4,14 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 5</title>
+    <!-- link for tailwind and daisy -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- link for css -->
+    <link rel="stylesheet" href="styles/style.css">
+
+
 </head>
-<body>
-    <header>
-        
+
+<body class="">
+    <header class="mx-auto mt-5 lg:mr-24 ml-24">
+        <!-- nav bar starts -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-regular text-xl text-[#030712B3] align-center">
+
+                    <li ><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li ><a>Destination</a></li>
+                    <li ><a>Search</a></li>
+                   
+                </ul>
+              </div>
+              <p class="text-3xl font-regular text-[
+              #030712]
+              ">P-Ticket</p>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+               
+              </ul>
+            </div>
+            <div class="navbar-end">
+              
+                <a class="btn bg-[#1DD1001A]">Bus
+                    <img src="images/bus-icon.png" alt="">
+
+                </a>
+              
+              
+            </div>
+          </div>
+
+
+          <!-- banner section starts -->
+          <section class=" bg-contain max-w-full  lg:h-screen bg-fixed  bg-[url(images/banner.png)] bg-no-repeat text-center mt-7 rounded-lg">
+            
+
+            <h1 class="text-center text-[#FFFFFF] font-regular poppins-regular text-5xl lg:text-6xl pb-10 mt-5 " >End-to-End Travel with 
+                <br>
+                <span class="text-[#1DD100] mt-4 barlow-regular">P Paribahan </span>
+            </h1>
+            <p class="text-center font-inter text-xl text-white poppins-regular pt-7 space-y-10    
+            ">Now its time to travel with app and 
+                 experience an
+                 <br> amazing accessibility through this app.
+                 
+                 We are ready to help you through an app</p>
+
+                 <button class=" btn poppins-semibold text-xl text-[#030712] mt-5 ">Buy Tickets</button>
+                
+            
+          </section>
+
     </header>
-    <main>
+    <main class="mx-auto">
+
+
+
 
     </main>
+
+    <!-- link for JC -->
+    <script src="script/commonFunction.js"></script>
     
 </body>
 </html>
