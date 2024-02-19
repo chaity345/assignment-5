@@ -1,7 +1,9 @@
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&family=Inter&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
 
 /* poppins font */
 .poppins-regular {
@@ -69,4 +71,6 @@
     font-weight: 900;
     font-style: normal;
   }
-  
+   /* inter-font */
+   
+

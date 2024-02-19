@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,7 @@
     <!-- link for tailwind and daisy -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- link for css -->
     <link rel="stylesheet" href="styles/style.css">
 
@@ -19,130 +20,316 @@
         <!-- nav bar starts -->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-regular text-xl text-[#030712B3] align-center">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-regular text-xl text-[#030712B3] align-center">
 
-                    <li ><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li ><a>Destination</a></li>
-                    <li ><a>Search</a></li>
-                   
-                </ul>
-              </div>
-              <p class="text-3xl font-regular text-[
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+
+                    </ul>
+                </div>
+                <p class="text-3xl font-regular text-[
               #030712]
               ">P-Ticket</p>
             </div>
             <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Destination</a></li>
-                <li><a>Search</a></li>
-               
-              </ul>
+                <ul class="menu menu-horizontal px-1">
+
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+
+                </ul>
             </div>
             <div class="navbar-end">
-              
+
                 <a class="btn bg-[#1DD1001A]">Bus
                     <img src="images/bus-icon.png" alt="">
 
                 </a>
-              
-              
+
+
             </div>
-          </div>
+        </div>
 
 
-          <!-- banner section starts -->
-          <section class=" bg-contain max-w-full lg:h-screen  bg-fixed  bg-[url(images/banner.png)] bg-no-repeat text-center mt-7 rounded-lg">
-            
+        <!-- banner section starts -->
+        <section
+            class=" bg-contain max-w-full lg:h-screen  bg-fixed  bg-[url(images/banner.png)] bg-no-repeat text-center mt-7 rounded-lg">
 
-            <h1 class="text-center text-[#FFFFFF] font-regular poppins-regular text-5xl lg:text-6xl pb-10 mt-5 " >End-to-End Travel with 
+
+            <h1 class="text-center text-[#FFFFFF] font-regular poppins-regular text-5xl lg:text-6xl pb-10 mt-5 ">
+                End-to-End Travel with
                 <br>
                 <span class="text-[#1DD100] mt-4 barlow-regular">P Paribahan </span>
             </h1>
             <p class="text-center font-inter text-xl text-white poppins-regular pt-7 space-y-10    
-            ">Now its time to travel with app and 
-                 experience an
-                 <br> amazing accessibility through this app.
-                 
-                 We are ready to help you through an app</p>
+            ">Now its time to travel with app and
+                experience an
+                <br> amazing accessibility through this app.
 
-                 <button class=" btn poppins-semibold text-xl text-[#030712] mt-5 ">Buy Tickets</button>
-                
-            
-          </section>
+                We are ready to help you through an app
+            </p>
+
+            <button class=" btn poppins-semibold text-xl text-[#030712] mt-5 ">Buy Tickets</button>
+
+
+        </section>
 
     </header>
     <main class="mx-auto mt-5 lg:ml-24 lg:mr-24">
         <!-- best offer section -->
         <section class="">
-        <h1 class="poppins-bold text-4xl text-center mb-4"> Best offers for you</h1>
+            <h1 class="poppins-bold text-4xl text-center mb-4"> Best offers for you</h1>
 
-        <div class="flex flex-col lg:flex-row justify-center gap-6">
-            <div class="card  bg-[#FFBF0F] shadow-xl flex flex-row">
-            
-                <div class="card-body">
-                  <h2 class="card-title">
-                    15% OFF
-                    
-                  </h2>
-                  <div class="mt-4">
-                    <span class="poppins-medium text-xl">on your next purchase</span>
-                     <p class="poppins-regular text-xl">use by January 2024</p>
-                  </div>
-                  
+            <div class="flex flex-col lg:flex-row justify-center gap-6">
+                <div class="card  bg-[#FFBF0F] shadow-xl flex flex-row">
+
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            15% OFF
+
+                        </h2>
+                        <div class="mt-4">
+                            <span class="poppins-medium text-xl">on your next purchase</span>
+                            <p class="poppins-regular text-xl">use by January 2024</p>
+                        </div>
+
+                    </div>
+                    <img src="images/cupon-devider.png" alt="">
+                    <div class="card-body">
+                        <h1 class="card-title">NEW15</h1>
+                        <p class="barlow-regular text-xl">Coupon Code</p>
+
+
+                    </div>
+
+
                 </div>
-                <img src="images/cupon-devider.png" alt="">
-                <div class="card-body">
-                  <h1 class="card-title">NEW15</h1>
-                  <p class="barlow-regular text-xl">Coupon Code</p>
-                  
-                  
+
+
+                <div class="card  bg-[#F78C9C] shadow-xl flex flex-row">
+
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            20% OFF
+
+                        </h2>
+                        <div class="mt-4">
+                            <span class="poppins-medium text-xl">on your next purchase</span>
+                            <p class="poppins-regular text-xl">use by January 2024</p>
+                        </div>
+
+                    </div>
+                    <img src="images/cupon-devider.png" alt="">
+                    <div class="card-body ">
+                        <h1 class="card-title">Couple 20</h1>
+                        <p class="barlow-regular text-xl">Coupon Code</p>
+
+
+                    </div>
+
+
                 </div>
-    
-              
+
+
+
+
             </div>
-    
-    
-            <div class="card  bg-[#F78C9C] shadow-xl flex flex-row">
-                
-                <div class="card-body">
-                  <h2 class="card-title">
-                    20% OFF
-                    
-                  </h2>
-                  <div class="mt-4">
-                    <span class="poppins-medium text-xl">on your next purchase</span>
-                     <p class="poppins-regular text-xl">use by January 2024</p>
-                  </div>
-                  
-                </div>
-                <img src="images/cupon-devider.png" alt="">
-                <div class="card-body ">
-                  <h1 class="card-title">Couple 20</h1>
-                  <p class="barlow-regular text-xl">Coupon Code</p>
-                  
-                  
-                </div>
-    
-              
+            <div class="text-center mt-6">
+                <button class="btn  poppins-bold text-sm text-[#1DD100]">See All Offers</button>
             </div>
-    
-    
-            
-                
-        </div>
-        <div class="text-center mt-6">
-            <button class="btn bg-[#1DD100] poppins-bold text-sm">See All Offers</button>
-        </div>
-        
-    </section>
+
+        </section>
+
+        <!-- ticket section -->
+        <section class="mt-8 bg-[#F7F8F8]">
+            <div class="text-center ">
+                <h1 class="barlow-bold text-5xl"> P.H Paribahan</h1>
+                <p class="poppins-regular text-xl text-[#03071299] mt-8">yes you can choose your choice by your one
+                    click.This app help you to purchase your seat properly</p>
+            </div>
+
+            <!-- card 1 -->
+
+            <div class="flex flex-col lg:flex-row justify-center gap-6 ">
+
+                <div class="card   shadow-xl flex flex-row">
+
+                    <div class="flex flex-col lg:flex-row justify-center  ">
+
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                <img src="images/bus-logo.png" alt="" height="20px">
+                                <p class="poppins-semibold text-3xl text-[#030712]">Greenline Paribahan</p>
+
+
+                            </h2>
+                            <div class="mt-4">
+                                <span class="poppins-regula text-sm">Coach-009-WEB ! AC_Business</span>
+
+                            </div>
+
+                            <!-- input part -->
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="">
+
+                        <button class="btn poppins-bold text-sm bg-[#1DD10026] text-[#1DD100]"><img
+                                src="images/seat-green-filled.png" alt="" height="5px">
+                            40 Seats left
+                        </button>
+                    </div>
+
+
+                    <img src="images/cupon-devider.png" alt="" class="">
+                    <div class="card-body">
+                        <img src="images/fare.png" alt="" height="20">
+                        <h1 class="card-title">550 Taka
+                        </h1>
+                        <p class="barlow-regular text-xl">Per Seat</p>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- ticket selection part -->
+
+            <!-- div container -->
+            <div class="rounded-lg mt-5 ">
+                <!-- card  -->
+                <div class="card   shadow-xl ml-4 mr-4 flex flex-col lg:flex-row">
+                    <!-- card body 1 seat -->
+
+                    <div class="card-body">
+
+                        <!-- div 1 -->
+                        <div>
+                            <h1 class="poppins-regular font-xl ">Select Your Seat</h1>
+                            <hr>
+                            <div>
+
+                                <div class="flex flex-col lg:flex-row justify-between">
+
+                                    <div class="flex flex-row items-center ">
+
+                                        <img src="images/seat-gray.png" alt="">
+                                        <span class="poppins-regular text-sm text-[#03071280]">Available</span>
+                                    </div>
+
+                                    <div class="flex flex-row items-center">
+                                        <img src="images/seat-green.png" alt="">
+                                        <p class="poppins-regular text-sm text-[#1DD100]">Selected</p>
+                                    </div>
+
+
+
+                                </div>
+                                <hr>
+                                <div class="flex justify-end mt-4">
+                                    <button class="btn"><img src="images/Vector.png" alt=""></button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <hr>
+                        <!-- seat div -->
+                        <div class="grid grid-cols- 2 lg:grid-cols-4 gap-4">
+                            
+                            <button class="btn">A1</button>
+                            <button class="btn">A2</button>
+                            <button class="btn">A3</button>
+                            <button class="btn">A4</button>
+                            <button class="btn">B1</button>
+                            <button class="btn">B2</button>
+                            <button class="btn">B3</button>
+                            <button class="btn">B4</button>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                    <!-- card body total price -->
+                    <div class="card-body h-full border-l border-gray-500">
+                        
+
+                        <h1 class="poppins-regular font-xl ">Select Your Seat</h1>
+                        <hr>
+                        <div>
+                            <div class="flex flex-row">
+                                <p class="text-sm poppins-regular text-[#030712]" >Seat</p>
+                                <p class="text-sm poppins-regular text-[#030712]">class</p>
+                                <p class="text-sm poppins-regular text-[#030712]">price</p>
+                            </div>
+                            <hr>
+                            <div class="flex flex-row">
+                                <p class='text-sm poppins-regular text-[#030712]' >C1</p>
+                                <p  class='text-sm poppins-regular text-[#030712]' >Economy</p>
+                                <p class='text-sm poppins-regular text-[#030712]' >550</p>
+
+                            </div>
+                            <hr>
+
+                            <div class="flex flex-row">
+                                <p class='text-sm poppins-regular text-[#030712]' >C1</p>
+                                <p  class='text-sm poppins-regular text-[#030712]' >Economy</p>
+                                <p class='text-sm poppins-regular text-[#030712]' >550</p>
+
+                            </div>
+                            <hr>
+                            <div class="flex flex-row justify-end">
+                                <p class="text-sm poppins-regular text-[#030712]">Total Price</p>
+                                <p class="text-sm poppins-regular text-[#030712]">BDT 1100</p>
+
+                            </div>
+                            <!-- cupon part -->
+                            <div>
+                                <input type="text"placeholder='Have any cupon?'class='p-4 rounded-lg'  >
+                                <button class="btn bg-[#1DD100] text-white ">Apply</button>
+                                <div class="flex justify-end flex-1 mt-5">
+                                    <p class="text-sm poppins-regular text-[#030712]">GrandTotal</p>
+                                    <p class="text-sm poppins-regular text-[#030712]">1100</p>
+                                </div>
+                            </div>
+
+                            <!-- next button -->
+                            <button class="btn bg-[#1DD100] text-[#FFFFFF] text-sm poppins-regular w-full mt-4">Next</button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+        </section>
 
 
 
@@ -151,6 +338,7 @@
 
     <!-- link for JC -->
     <script src="script/commonFunction.js"></script>
-    
+
 </body>
+
 </html>
