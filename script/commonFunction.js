@@ -120,6 +120,11 @@ for (const btn of allBtn) {
             
 
         }
+         /* if(click>1){
+            const containerId = document.getElementById('add-container');
+            containerId.removeChild(p);
+
+        }  */
         
 
         //total price count and get the id
@@ -157,14 +162,6 @@ for (const btn of allBtn) {
 
 
 }
-//SCROLL DOWN TOP TO DOWN
-const fromDiv=document.getElementById('buy-button');
-const toDiv=document.getElementById('ticket-div');
-//Add a score event listener formDiv to toDiv
-
-fromDiv.addEventListener('scroll',function(){
-    toDiv.scrollTop=fromDiv.scrollTop;
-});
 
 function scrollActive(){
     const toDiv=document.getElementById('ticket-div');
