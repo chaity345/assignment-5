@@ -157,3 +157,16 @@ for (const btn of allBtn) {
 
 
 }
+//SCROLL DOWN TOP TO DOWN
+const fromDiv=document.getElementById('buy-button');
+const toDiv=document.getElementById('ticket-div');
+//Add a score event listener formDiv to toDiv
+
+fromDiv.addEventListener('scroll',function(){
+    toDiv.scrollTop=fromDiv.scrollTop;
+});
+
+function scrollActive(){
+    const toDiv=document.getElementById('ticket-div');
+    toDiv.scrollIntoView({behavior:'smooth'});
+}
