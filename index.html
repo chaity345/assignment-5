@@ -188,11 +188,11 @@
                         </div>
                     </div>
 
-                    <div class="">
+                    <div class="score-div">
 
                         <button class="btn poppins-bold text-sm bg-[#1DD10026] text-[#1DD100]"><img
-                                src="images/seat-green-filled.png" alt="" height="5px">
-                            40 Seats left
+                                src="images/seat-green-filled.png" alt="" height="5px" id=''>
+                            <span id="current-seat">40 </span>Seats left
                         </button>
                     </div>
 
@@ -253,16 +253,16 @@
                         </div>
                         <hr>
                         <!-- seat div -->
-                        <div class="grid grid-cols- 2 lg:grid-cols-4 gap-4">
-                            
-                            <button class="btn">A1</button>
-                            <button class="btn">A2</button>
-                            <button class="btn">A3</button>
-                            <button class="btn">A4</button>
-                            <button class="btn">B1</button>
-                            <button class="btn">B2</button>
-                            <button class="btn">B3</button>
-                            <button class="btn">B4</button>
+                        <div onclick="" id='button-div' class="grid grid-cols- 2 lg:grid-cols-4 gap-4">
+
+                            <button id='A1' class="btn all-btn">A1</button>
+                            <button id='A2' class="btn all-btn">A2</button>
+                            <button id='A3' class="btn all-btn">A3</button>
+                            <button id='A4' class="btn all-btn">A4</button>
+                            <button id='B1' class="btn all-btn">B1</button>
+                            <button id='B2' class="btn all-btn">B2</button>
+                            <button id='B3' class="btn all-btn">B3</button>
+                            <button id='B4' class="btn all-btn">B4</button>
                         </div>
 
 
@@ -273,49 +273,89 @@
                     </div>
                     <!-- card body total price -->
                     <div class="card-body h-full border-l border-gray-500">
-                        
+
 
                         <h1 class="poppins-regular font-xl ">Select Your Seat</h1>
                         <hr>
                         <div>
-                            <div class="flex flex-row">
-                                <p class="text-sm poppins-regular text-[#030712]" >Seat</p>
-                                <p class="text-sm poppins-regular text-[#030712]">class</p>
-                                <p class="text-sm poppins-regular text-[#030712]">price</p>
+                            <div class="flex flex-row justify-center">
+                                <p class="text-xl poppins-regular text-[#030712]">Seat <span id="seat-count">0</span>
+                                </p>
+                                <p class="text-xl poppins-regular text-[#030712]">Class</p>
+                                <p class="text-xl poppins-regular text-[#030712]">Price</p>
                             </div>
                             <hr>
-                            <div class="flex flex-row">
-                                <p class='text-sm poppins-regular text-[#030712]' >C1</p>
-                                <p  class='text-sm poppins-regular text-[#030712]' >Economy</p>
-                                <p class='text-sm poppins-regular text-[#030712]' >550</p>
+
+
+                            <!-- empty div for append child -->
+
+                            <div id='add-container' class=" grid grid-cols-3">
+
+
+
+
 
                             </div>
                             <hr>
 
-                            <div class="flex flex-row">
-                                <p class='text-sm poppins-regular text-[#030712]' >C1</p>
-                                <p  class='text-sm poppins-regular text-[#030712]' >Economy</p>
-                                <p class='text-sm poppins-regular text-[#030712]' >550</p>
-
-                            </div>
-                            <hr>
                             <div class="flex flex-row justify-end">
                                 <p class="text-sm poppins-regular text-[#030712]">Total Price</p>
-                                <p class="text-sm poppins-regular text-[#030712]">BDT 1100</p>
+                                <p class="text-sm poppins-regular text-[#030712]">BDT <span id="price">0</span></p>
 
                             </div>
-                            <!-- cupon part -->
-                            <div>
-                                <input type="text"placeholder='Have any cupon?'class='p-4 rounded-lg'  >
-                                <button class="btn bg-[#1DD100] text-white ">Apply</button>
+                            <!-- apply cupon part on input field -->
+                            <div class="flex flex-row-justify-between">
+                                <p>Cupon: <span id="cupon-code"></span></p>
+                                <p> Discount <span id='dis-num'></span></p>
+                            </div>
+
+
+                            <div id="input-div">
+
+
+
+                                <input id='input-field' type="text" placeholder='Have any cupon?'
+                                    class='p-4 rounded-lg'>
+                                <button onclick='calculateDiscount()' id="apply-btn"
+                                    class="btn bg-[#1DD100] text-white " disabled>Apply</button>
                                 <div class="flex justify-end flex-1 mt-5">
                                     <p class="text-sm poppins-regular text-[#030712]">GrandTotal</p>
-                                    <p class="text-sm poppins-regular text-[#030712]">1100</p>
+                                    <p class="text-sm poppins-regular text-[#030712]">BDT <span id="cupon-dis">0</span>
+                                    </p>
                                 </div>
                             </div>
 
                             <!-- next button -->
-                            <button class="btn bg-[#1DD100] text-[#FFFFFF] text-sm poppins-regular w-full mt-4">Next</button>
+                             <!-- <button id="next-button"
+                                class="btn bg-[#1DD100] text-[#FFFFFF] text-sm poppins-regular w-full 
+                                mt-4">Next</button> --> 
+                            <div>
+                                <!-- Open the modal using ID.showModal() method -->
+                                <button class="btn bg-[#1DD100] w-full text-[#FFFFFF] text-sm poppins-regular mt-4" onclick="my_modal_5.showModal()">Next</button>
+                                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                                    <div class="modal-box">
+                                        <div class="flex justify-center">
+                                        <img src="images/success.png" alt="">
+                                        
+                                    </div>
+                                        <h3 class="font-bold text-lg text-center text-green-400 mt-4 ">Success</h3>
+                                        <p class="py-4 text-sm poppins-regular text-center mt-4">Thank you for Booking Our Bus Seats. 
+                                            We are working hard to find the best service and deals for you. 
+                                            </p>
+                                            <p class="text-gray-500 text-sm poppins-regular text-center mt-4"> 
+                                                Shortly you will find a confirmation in your email.</p>
+                                        <div class="">
+                                             <form method="dialog"> 
+                                                <!-- if there is a button in form, it will close the modal -->
+                                                <div class="flex justify-center">
+                                                <button class="btn text-center bg-green-500">Continue</button>
+                                            </div>
+                                             </form> 
+                                        </div>
+                                    </div>
+                                </dialog>
+
+                            </div>
                         </div>
 
 
@@ -331,13 +371,20 @@
 
         </section>
 
+        <!-- modal section -->
+        <section>
+
+        </section>
+
 
 
 
     </main>
 
     <!-- link for JC -->
+
     <script src="script/commonFunction.js"></script>
+    <script src="script/function.js"></script>
 
 </body>
 
